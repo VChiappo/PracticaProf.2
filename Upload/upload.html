@@ -10,7 +10,7 @@
 <body>
     <div class="sidebar">
         <div class="profile">
-            <img src="/Imagenes/user-img.png" alt="Perfil" class="profile-img">
+            <img src="Imagenes/user-img.png" alt="Perfil" class="profile-img">
             <h3>Bienvenido</h3>
             <p>Administrador</p>
         </div>
@@ -27,7 +27,49 @@
             <h1>CARGA DE MEDICAMENTOS</h1>
         </div>
         <div class="content">
-           
+            <div class="content">
+                <h1>Medicamentos</h1>
+                <div class="top-bar">
+                    <input type="text" id="search" placeholder="Buscador...">
+                    <button id="addBtn">Agregar</button>
+                </div>
+                
+                <table id="medicamentosTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Stock</th>
+                            <th>Fecha de Caducidad</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las filas se agregarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+        
+                <div id="medicamentoFormContainer" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="formTitle">Agregar Medicamento</h2>
+                        <form id="medicamentoForm">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+        
+                            <label for="stock">Stock:</label>
+                            <input type="number" id="stock" name="stock" required>
+        
+                            <label for="fechaCaducidad">Fecha de Caducidad:</label>
+                            <input type="date" id="fechaCaducidad" name="fechaCaducidad" required>
+        
+                            <input type="hidden" id="medicamentoId">
+        
+                            <button type="submit">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
         </div>
     </div>
 

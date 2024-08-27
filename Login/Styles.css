@@ -1,5 +1,5 @@
 body {
-    background: url('/Imagenes/FondoFarmacia.jpg') no-repeat center center fixed;
+    background: url('../Imagenes/FondoFarmacia.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
 }
@@ -23,7 +23,6 @@ body {
     width: 300px;
     margin-bottom: 20px ;
 }
-
 
 .form-group{
     position: relative;
